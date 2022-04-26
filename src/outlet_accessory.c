@@ -23,9 +23,9 @@ homekit_characteristic_t cha_switch_on = HOMEKIT_CHARACTERISTIC_(ON, false);
 void accessory_identify(homekit_value_t _value) {
 	printf("accessory identify\n");
 	for (int j = 0; j < 10; j++) {
-		// digitalWrite(PIN_LED, LOW);
+		digitalWrite(PIN_LED, LOW);
 		delay(50);
-		// digitalWrite(PIN_LED, HIGH);
+		digitalWrite(PIN_LED, HIGH);
 		delay(50);
 	}
 }

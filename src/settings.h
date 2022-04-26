@@ -2,7 +2,7 @@
 #ifndef SETTINGS_H_
 #define SETTINGS_H_
 
-#define VERSION     "0.1.43"
+#define VERSION     "0.1.38"
 
 //#define USE_RTC
 #define USE_SPIFFS
@@ -21,13 +21,13 @@
 #define ACCESSORY_PASSWORD              "111-11-111"
 #define ACCESSORY_SETUP_ID              "ABCD"
 
-#define PIN_LEDD    13	//D7    LED
-#define PIN_RELAY   14	//D5    RELAY
-#define PIN_BUTTON	4	//D2    BUTTON
-// #define PIN_LEDD	16	//D0    LED
-// #define PIN_RELAY  2	//D4    RELAY
-// #define PIN_BUTTON	0	//Dx    BUTTON
+// #define PIN_LED     13	//D7    LED
+// #define PIN_RELAY   14	//D5    RELAY
+// #define PIN_BUTTON	4	//D2    BUTTON
+#define PIN_LED 	16	//D0    LED
+#define PIN_RELAY  2	//D4    RELAY
+#define PIN_BUTTON	0	//Dx    BUTTON
 
-#define COMMON_NUMEL(ARRAY) (sizeof(ARRAY) / sizeof(ARRAY[0]))
+//#define HTTPS
 
 #endif
