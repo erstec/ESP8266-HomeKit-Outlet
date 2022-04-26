@@ -12,7 +12,7 @@
 #endif
 
 #define ACCESSORY_NAME			        ("ESP8266_OUTLET")
-//#define ACCESSORY_SN  			        ("SN_1122334455")  //SERIAL_NUMBER
+// #define ACCESSORY_SN                    ("SN_1122334455")  //SERIAL_NUMBER
 #define ACCESSORY_SN  			        ("SN")  //SERIAL_NUMBER
 #define ACCESSORY_MANUFACTURER 	        ("Arduino Homekit")
 #define ACCESSORY_MODEL  		        ("ESP8266")

@@ -1,6 +1,7 @@
 #include <Arduino.h>
 
 #include <settings.h>
+#include <ota_secret.h>
 
 #include <ESP8266WiFi.h>
 
@@ -254,7 +255,7 @@ void setup() {
 	// Route for root / web page
 	httpServer.on("/", HTTP_GET, handleRoot);
 
-	httpUpdater.setup(&httpServer, "admin", "your_secret_password");
+	httpUpdater.setup(&httpServer, OTA_USER, OTA_PASSWORD);
 	httpServer.begin();
 
 	ledTimerSetPattern(blink500);
@@ -354,7 +355,7 @@ void homekit_setup() {
 	cha_switch_on.setter = cha_switch_on_setter;
 	cha_switch_on.getter = cha_switch_on_getter;
 
-	// httpUpdater.setup(&httpServer, "admin", serial_number_value);
+	// httpUpdater.setup(&httpServer, OTA_USER, serial_number_value);
 	// httpServer.begin();
 
 	arduino_homekit_setup(&config);
